@@ -1,15 +1,18 @@
-package com.ing.zoo;
+package com.ing.zoo.models;
+
+import com.ing.zoo.interfaces.Carnivore;
+import com.ing.zoo.interfaces.Performer;
 
 import java.util.Random;
 
-public class Tiger {
+public class Tiger extends Animal implements Carnivore, Performer {
     public String name;
     public String helloText;
     public String eatText;
     public String trick;
 
-    public Tiger()
-    {
+    public Tiger(String name){
+        super(name);
     }
 
     public void sayHello()

@@ -1,12 +1,14 @@
-package com.ing.zoo;
+package com.ing.zoo.models;
 
-public class Lion {
+import com.ing.zoo.interfaces.Carnivore;
+
+public class Lion extends Animal implements Carnivore {
     public String name;
     public String helloText;
     public String eatText;
 
-    public Lion()
-    {
+    public Lion(String name) {
+        super(name);
     }
 
     public void sayHello()

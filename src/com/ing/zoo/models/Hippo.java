@@ -1,26 +1,25 @@
-package com.ing.zoo;
+package com.ing.zoo.models;
 
-import java.util.Random;
+import com.ing.zoo.interfaces.Herbivore;
 
-public class Zebra {
+public class Hippo extends Animal implements Herbivore {
     public String name;
     public String helloText;
     public String eatText;
-    public String trick;
 
-    public Zebra()
-    {
+    public Hippo(String name){
+        super(name);
     }
 
     public void sayHello()
     {
-        helloText = "zebra zebra";
+        helloText = "splash";
         System.out.println(helloText);
     }
 
     public void eatLeaves()
     {
-        eatText = "munch munch zank yee bra";
+        eatText = "munch munch lovely";
         System.out.println(eatText);
     }
 }

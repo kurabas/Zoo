@@ -1,15 +1,19 @@
-package com.ing.zoo;
+package com.ing.zoo.models;
+
+import com.ing.zoo.interfaces.Carnivore;
+import com.ing.zoo.interfaces.Herbivore;
+import com.ing.zoo.interfaces.Performer;
 
 import java.util.Random;
 
-public class Pig {
+public class Pig extends Animal implements Carnivore, Herbivore, Performer {
     public String name;
     public String helloText;
     public String eatText;
     public String trick;
 
-    public Pig()
-    {
+    public Pig(String name){
+        super(name);
     }
 
     public void sayHello()
